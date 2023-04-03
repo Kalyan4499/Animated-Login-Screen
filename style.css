@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color:rgb(255, 255, 255);
+	font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+	width: 400px;
+	height: 500px;
+	margin: 100px auto;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.36);
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	color: #505050;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
+}
+
+form {
+	position: relative;
+	z-index: 1;
+}
+
+.form-control {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.form-control label {
+	display: block;
+	font-size: 18px;
+	color: #4000ff;
+	margin-bottom: 5px;
+}
+
+.form-control input[type="text"], .form-control input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background: transparent;
+	color: #ffffff;
+	font-size: 16px;
+	border-bottom: 2px solid #fff;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-control input[type="text"]:focus, .form-control input[type="password"]:focus {
+	border-bottom: 2px solid #9400D3;
+}
+
+button[type="submit"] {
+	background: transparent;
+	border: 2px solid #9400D3;
+	color: #000000;
+	padding: 10px 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+	background: #9400D3;
+}
+
+button[type="submit"]:before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	bottom: -5px;
+	right: -5px;
+	background: linear-gradient(135deg, #00FFFF, #9400D3, #FF1493);
+	z-index: -1;
+	border-radius: 10px;
+	transform: scale(0.95);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover:before {
+	opacity: 1;
+	transform: scale(1);
+}
