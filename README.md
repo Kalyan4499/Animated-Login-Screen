@@ -1,1 +1,23 @@
-# Animated-Login-Screen
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Screen</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form>
+			<div class="form-control">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" placeholder="Enter username">
+			</div>
+			<div class="form-control">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Enter password">
+			</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+</body>
+</html>
